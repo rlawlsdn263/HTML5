@@ -61,14 +61,20 @@ body {
 .slogan {
   background: skyblue;
   height: 10vh;
+  width: 940px;
 }
 
 /* 푸터 */
 .footer {
   background: gray;
+  width: 940px;
+  margin: 0 auto;
 }
 
 .footer-inner {
   background-color: silver;
   height: 15vh;
+  position: relative;
+  top: -10px;
+  left: -10px;
 }
