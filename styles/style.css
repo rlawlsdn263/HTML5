@@ -115,8 +115,11 @@ body {
   height: 47px;
 }
 
+.menu li {
+  float: left;
+}
+
 .menu-item {
-  /* background-color: aqua; */
   float: left;
   border-left: 2px solid #fff;
 }
@@ -148,6 +151,10 @@ body {
   background-color: pink;
   position: absolute;
   display: none;
+}
+
+.is-active .sub-menu {
+  display: block;
 }
 
 /* 비주얼 */
