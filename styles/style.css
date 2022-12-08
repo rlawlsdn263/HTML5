@@ -230,11 +230,49 @@ body {
   }
 }
 
+@keyframes fadeEffect {
+  0% { opacity: 1; }
+
+  100% {opacity: 0;}
+
+  /* 100% { opacity: 1; } */
+}
 
 .visual {
   /* background: orange; */
   height: 120px;
   position: relative;
+}
+
+.visual::before, .visual::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  animation-name: fadeEffect;
+  animation-duration: 4000ms;
+  /* 애니메이션 무한재생 */
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.visual::before {
+  /* background-color: yellow; */
+  /* background-image: url('./images/ani_flower_01.png'), 
+                    url('./images/ani_flower_02.png');
+  background-repeat: no-repeat;
+  background-position: 0 -10px, 600px 0; */
+  background: url('./images/ani_flower_01.png') no-repeat 0 -10px,
+  url('./images/ani_flower_02.png') no-repeat 600px 0;
+}
+
+.visual::after {
+  /* background-color: pink; */
+  background: url('./images/ani_flower_03.png') no-repeat 300px 0,
+  url('./images/ani_flower_04.png') no-repeat 800px 0;
+  animation-delay: 1000ms;
 }
 
 .visual-text {
@@ -243,9 +281,8 @@ body {
   animation-duration: 3000ms;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-  /* background-color: aqua; */
-  /* display: inline-block; */
   position: absolute;
+  z-index: 1;
 }
 
 /* 메인 */
