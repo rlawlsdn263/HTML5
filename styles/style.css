@@ -287,10 +287,11 @@ body {
 
 /* 메인 */
 .main {
-  background: lightgreen;
-  height: 50vh;
   display: flow-root;
-  padding: 0 15px;
+  background: #fff;
+  min-height: 450px;
+  padding: 30px 15px;
+  border-radius: 15px 15px 0  0;
 }
 
 .group {
@@ -299,7 +300,7 @@ body {
 }
 
 .group1 {
-  background-color: violet;
+  /* background-color: violet; */
   width: 250px;
 }
 .group2 {
@@ -311,12 +312,64 @@ body {
   width: 190px;
 }
 
+/* 로그인 */
+
+/* orange, orangered */
+
+.login {
+  box-shadow: 5px 5px 0 0 #ccc;
+  background: coral radial-gradient(circle at right top, orange, orangered);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* .login {
+  background-color: coral;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 10px 10px 0px lightgray;
+}
+
+.login-title {
+  text-indent: 15px; 
+  color: yellow;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 5px 0px 10px 0px;
+}
+
+.login-form {
+  background: #fff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 10px 10px 0 10px;
+}
+
+.user-email {
+  display: inline-block;
+}
+
+.sign {
+  background: #fff;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 0 10px 10px 10px;
+} 
+
+.sign li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+*/
+
 /* 슬로건 */
 .slogan {
   background: skyblue;
   height: 10vh;
   clear: both;
 }
+
 /* 푸터 */
 .footer {
   background: #ccc
