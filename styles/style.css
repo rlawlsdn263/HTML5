@@ -3,7 +3,7 @@
 @import url(./reset.css);
 
 /* 숨김 콘텐츠 */
-.a11y-hidden {
+.a11y-hidden, legend {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -322,6 +322,92 @@ body {
   padding: 10px;
   border-radius: 5px;
 }
+
+
+.login-title {
+  color: #ff0;
+  font-size: 15px;
+  /* h2는 원래 bold인데 reset.css 때문에 제거됐음 */
+  font-weight: 700;
+  /* margin-left: 10px; */
+  /* padding-left: 10px; */
+  text-indent: 10px; 
+}
+
+.login-form {
+  background-color: #fff;
+  margin-top: 10px;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 0 10px;
+}
+
+.login-form fieldset {
+  position: relative;
+}
+
+.user-email {
+  background-color: skyblue;
+}
+
+.user-pw {
+  background-color: lime;
+}
+
+.login-form label {
+  background-color: salmon;
+  display: inline-block;
+  /* 4글자만큼 주라 */
+  width: 4em;
+}
+
+.login-form input {
+  width: 90px;
+  height: 24px;
+  border: 1px solid #aaa;
+}
+
+.login-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* .login-form fieldset {
+  position: relative;
+}
+
+.login-form label {
+  display: inline-block;
+  width: 50px;
+  padding-bottom: 10px;
+}
+
+.login-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50px;
+  background-color: orangered;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+}
+
+#userEmail, #userPw {
+  width: 100px;
+} */
+
+.sign {
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  padding: 0 10px 10px 10px;
+
+  /* display: flex;
+  padding-top: 10px;
+  justify-content: space-between; */
+}
+
+
 
 /* .login {
   background-color: coral;
