@@ -343,18 +343,17 @@ body {
 
 .login-form fieldset {
   position: relative;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 5px;
 }
 
-.user-email {
-  background-color: skyblue;
-}
-
-.user-pw {
-  background-color: lime;
+.user-email, .user-pw {
+  /* background-color: skyblue; */
+  margin-bottom: 5px;
 }
 
 .login-form label {
-  background-color: salmon;
+  /* background-color: salmon; */
   display: inline-block;
   /* 4글자만큼 주라 */
   width: 4em;
@@ -364,13 +363,29 @@ body {
   width: 90px;
   height: 24px;
   border: 1px solid #aaa;
+  padding: 1px 1px 1px 5px;
+  border-radius: 3px;
 }
 
 .login-button {
   position: absolute;
   top: 0;
   right: 0;
+  height: 53px;
+
+  /* 버튼 장식 속성 */
+  background-color: orangered;
+  color: #fff;
+  border: none;
+  padding: 0 8px 0 8px;
+  border-radius: 5px;
+  font-size: 13px;
 }
+
+.sign {
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  padding: 0 10px 10px 10px;
 
 /* .login-form fieldset {
   position: relative;
@@ -396,11 +411,6 @@ body {
 #userEmail, #userPw {
   width: 100px;
 } */
-
-.sign {
-  background-color: #fff;
-  border-radius: 0 0 5px 5px;
-  padding: 0 10px 10px 10px;
 
   /* display: flex;
   padding-top: 10px;
