@@ -620,6 +620,13 @@ body {
   float: right;
 }
 
+.news-item-thumbnail {
+  /* position: absolute;
+  top: 3px;
+  left: 0; */
+  /* text-align: center; */
+}
+
 .news-item-thumbnail img {
   box-shadow: 0 15px 10px 5px #ccc;
   margin-bottom: 15px;
@@ -654,13 +661,12 @@ body {
 }
 
 /* IR 기법 -> Image Replacement */
-
 .event-button {
   width: 19px;
   height: 18px;
   border: 0;
   padding: 18px 0 0 0;
-  background: url(./images/backpage_forwardpage.png);
+  background: url(./images/back_forward.png) no-repeat;
 }
 
 .event-button-next {
@@ -671,7 +677,8 @@ body {
   outline-offset: -2px;
 }
 
-.event-thumbnail, .event-brief {
+.event-thumbnail,
+.event-brief {
   margin: 10px 0;
 }
 
