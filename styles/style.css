@@ -100,34 +100,47 @@ body {
   margin-top: 20px;
 }
 
-.event-button-wrapper {
- background-color: yellow;
- overflow: hidden;
- padding: 4px;
+.event {
+  border-bottom: 1px solid #aaa;
 }
 
+.event-title {
+  /* background-color: pink; */
+  float: left;
+}
 
+.event-button-wrapper {
+  /* background-color: yellow; */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  gap: 5px;
+}
 
 .event-button {
   width: 19px;
   border: 0;
   height: 18px;
   padding: 0;
-  text-indent: -9999px;
-  background: aqua url('./images/back_forward.png') no-repeat;
+  background: url("./images/back_forward.png") no-repeat;
 }
 
 .event-button-next {
   background-position: 100% 0;
 }
 
-.event-thumbnail, .event-breif {
+.event-thumbnail,
+.event-brief {
   margin: 10px 0;
 }
 
 .event-thumbnail img {
   border: 1px solid #aaa;
   box-shadow: 5px 5px 0 0 #ccc;
+}
+
+.related {
+  margin-top: 10px;
 }
 
 /* 인기 사이트 */
