@@ -620,12 +620,12 @@ body {
   float: right;
 }
 
-/* .news-item-thumbnail {
-  position: absolute;
+.news-item-thumbnail {
+  /* position: absolute;
   top: 3px;
-  left: 0;
-  text-align: center;
-} */
+  left: 0; */
+  /* text-align: center; */
+}
 
 .news-item-thumbnail img {
   box-shadow: 0 15px 10px 5px #ccc;
@@ -745,15 +745,7 @@ body {
   margin-top: 10px;
   counter-increment: number;
   background-color: pink;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.favorite-list a {
-  background-color: aqua;
-  /* flex-grow: 1; */
+  position: relative;
 }
 
 .favorite-list li::before {
@@ -772,11 +764,14 @@ body {
 .up,
 .stop,
 .down {
-  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -6px;
   width: 20px;
   height: 11px;
-  background: lime url('./images/rank.png') no-repeat 100% 0%;
   margin-left: auto;
+  background: lime url("./images/rank.png") no-repeat 100% 0;
 }
 
 .stop {
@@ -786,7 +781,6 @@ body {
 .down {
   background-position: 100% 100%;
 }
-
 
 .favorite-more {
   position: absolute;
